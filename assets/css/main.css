@@ -285,7 +285,7 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 30px 0;
+  text-align: center;
 }
 
 .header.sticked {
@@ -313,8 +313,18 @@ section {
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
+    text-align: center;
   }
 
+  .headernav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: maroon;
+
+  }
+
+  
   .navbar ul {
     margin: 0;
     padding: 0;
@@ -336,7 +346,7 @@ section {
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(255, 255, 255);
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -352,22 +362,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
-  }
-
-  .navbar .get-a-quote,
-  .navbar .get-a-quote:focus {
-    background: var(--color-primary);
-    padding: 8px 20px;
-    margin-left: 30px;
-    border-radius: 4px;
-    color: #fff;
-  }
-
-  .navbar .get-a-quote:hover,
-  .navbar .get-a-quote:focus:hover {
-    color: #fff;
-    background: #2756ff;
+    color: rgb(255, 175, 27);
   }
 
   .navbar .dropdown ul {
@@ -466,7 +461,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(14, 29, 52, 0.9);
+    background: maroon;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -481,7 +476,7 @@ section {
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(255, 255, 255);
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -497,7 +492,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: rgb(255, 175, 27);
   }
 
   .navbar .get-a-quote,
@@ -531,7 +526,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: #fff;
+    color: #0e0b0b;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -1010,7 +1005,7 @@ section {
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
 .faq {
-  padding-top: 80px;
+  padding-top: 10px;
 }
 
 .faq .accordion-item {
@@ -1804,26 +1799,17 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: var(--color-secondary);
-  padding: 50px 0;
-  color: white;
+  /* background-color: var(--color-secondary); */
+  padding: 10px 0;
+  /* color: white; */
 }
 
-.footer .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 25px;
-}
-
-.footer .footer-info .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
 
 .footer .footer-info .logo span {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #fff;
+  /* color: #fff; */
   font-family: var(--font-primary);
 }
 
@@ -1841,15 +1827,15 @@ section {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  /* color: rgba(255, 255, 255, 0.7); */
   margin-right: 10px;
   transition: 0.3s;
 }
 
-.footer .social-links a:hover {
+/* .footer .social-links a:hover {
   color: #fff;
   border-color: #fff;
-}
+} */
 
 .footer h4 {
   font-size: 16px;
@@ -1886,14 +1872,14 @@ section {
 }
 
 .footer .footer-links ul a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-links ul a:hover {
-  color: #fff;
+  color: #464444;
 }
 
 .footer .footer-contact p {
@@ -1911,5 +1897,5 @@ section {
 }
 
 .footer .credits a {
-  color: #fff;
+  /* color: #fff; */
 }
