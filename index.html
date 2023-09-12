@@ -170,7 +170,6 @@
         transform: rotate(-60deg);
       }
 
-
       .hexagon-large {
         display: flex;
         justify-content: center;
@@ -327,70 +326,19 @@
           </div>
         </div>
 
-      </div>
-    </section><!-- End About Us Section -->
-
-        <!-- ======= Products Section ======= -->
-        <section id="about" class="about pt-0">
-          <div class="container" data-aos="fade-up">
-    
-            <div class="row gy-4 mt-3">
-    
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img src="./assets/img/features-3.jpg">
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img src="./assets/img/features-3.jpg">
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 d-flex justify-content-center">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img src="./assets/img/features-3.jpg">
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-    
-          </div>
-        </section><!-- End Products Section -->
-    
-<!-- Our Services Section -->
-    <section id="featured-services" class="featured-services" style="height: 400px;background-color: rgb(255, 217, 0);">
+    <section id="services" class="services" style="background-color: rgb(255, 217, 0);">
       <div class="container">
 
-        <div class="row">
+        <div class="section-title">
+          <h1 class="title-content"> <img src="./assets/img/features-2.jpg" alt=""><span>ur Services</span> </h1>
+          <div class="section-underline">
+            <div class="underline-one"></div>
+            <div class="underline-image"><img src="./assets/img/features-1.jpg" alt=""></div>
+            <div class="underline-two"></div>
+          </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 200px;">
 
           <div class="col-lg-3 d-flex justify-content-center">
             <div class="hexagon-large">
@@ -402,7 +350,7 @@
           </div>
 
 
-          <div class="col-lg-3 d-flex justify-content-center" data-aos-delay="100">
+          <div class="col-lg-3 d-flex justify-content-center">
             <div class="hexagon-large">
               <div class="hexagon">
                 <div class="hexagon-text-content"><img height="90px" width="90px" src="./assets/img/about.jpg"></div>
@@ -410,7 +358,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 d-flex justify-content-center" data-aos-delay="200">
+          <div class="col-lg-3 d-flex justify-content-center">
             <div class="hexagon-large">
               <div class="hexagon">
                 <div class="hexagon-text-content"><img height="90px" width="90px" src="./assets/img/about.jpg"></div>
@@ -433,6 +381,132 @@
 <!-- End Our Services Section -->
 
 
+
+    <style>
+      .hexagon-large:hover {
+        margin-top: -30px;
+      }
+
+      .section-title{
+        margin-bottom: 100px;
+      }
+
+      .section-title .title-content {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 900;
+      }
+
+      .section-title .title-content img {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin-top: -28px;
+      }
+
+
+      .section-title .section-underline {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .section-title .section-underline .underline-one,
+      .section-title .section-underline .underline-two {
+        width: 130px;
+        height: 2px;
+        background-color: red;
+      }
+
+      .section-title .section-underline .underline-two {
+        background: rgb(75, 14, 14);
+        background: linear-gradient(90deg, rgba(75, 14, 14, 1) 0%, rgba(121, 9, 45, 1) 44%, rgba(255, 255, 255, 0) 100%);
+      }
+
+      .section-title .section-underline .underline-one {
+        background: rgb(75, 14, 14);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(121, 9, 45, 1) 44%, rgba(75, 14, 14, 1) 100%);
+      }
+
+      .section-title .section-underline .underline-image {
+        margin: -12px 10px 0px 10px;
+      }
+
+      .section-title .section-underline .underline-image img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      }
+    </style>
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="products" class="products">
+      <div class="container" data-aos="fade-up">
+
+
+        <div class="section-title">
+          <h1 class="title-content"> <img src="./assets/img/features-2.jpg" alt=""><span>ur Products</span> </h1>
+          <div class="section-underline">
+            <div class="underline-one"></div>
+            <div class="underline-image"><img src="./assets/img/features-1.jpg" alt=""></div>
+            <div class="underline-two"></div>
+          </div>
+        </div>
+
+
+
+        <div class="row gy-4 mt-3">
+
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/img/features-3.jpg">
+                </div>
+                <div class="flip-card-back">
+                  <h1>John Doe</h1>
+                  <p>Architect & Engineer</p>
+                  <p>We love that guy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/img/features-3.jpg">
+                </div>
+                <div class="flip-card-back">
+                  <h1>John Doe</h1>
+                  <p>Architect & Engineer</p>
+                  <p>We love that guy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/img/features-3.jpg">
+                </div>
+                <div class="flip-card-back">
+                  <h1>John Doe</h1>
+                  <p>Architect & Engineer</p>
+                  <p>We love that guy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
 
 
 
