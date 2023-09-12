@@ -1033,7 +1033,7 @@ section {
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: var(--color-primary);
+  color: gold;
   border-bottom: 0;
   box-shadow: none;
 }
@@ -1043,7 +1043,7 @@ section {
   top: 14px;
   left: 25px;
   font-size: 20px;
-  color: var(--color-primary);
+  color: orange;
 }
 
 .faq .accordion-button:after {
@@ -1894,8 +1894,4 @@ section {
   padding-top: 4px;
   text-align: center;
   font-size: 13px;
-}
-
-.footer .credits a {
-  /* color: #fff; */
 }
