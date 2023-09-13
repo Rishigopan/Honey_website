@@ -1057,8 +1057,16 @@ section {
   border: 0;
   background: rgba(14, 29, 52, 0.03);
   border-radius: 5px;
+  box-shadow: 0px 1px 1px 0px rgba(242, 187, 116, 1);
+
 }
 
+
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 0;
+    box-shadow: 0px 1px 5px 0px rgba(242, 187, 116, 1);
+}
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -1895,3 +1903,4 @@ section {
   text-align: center;
   font-size: 13px;
 }
+
