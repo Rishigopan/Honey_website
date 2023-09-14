@@ -19,7 +19,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,9 +29,15 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!-- animate CSS stylesheet library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
 
 </head>
@@ -41,7 +48,6 @@
   <header id="header" class="header  align-items-center hexabackground">
 
     <div class="">
-      
       <img src="assets/img/Logos/SIJO final logo.png" height="150px" width="200px" alt="">
     </div>
     <div class="container-fluid headernav align-items-center justify-content-center ">
@@ -57,25 +63,6 @@
           <li><a href="#about" class="mx-4 nav-content">About Us</a></li>
           <li><a href="#services" class="mx-4 nav-content">Services</a></li>
           <li><a href="" class="mx-4 nav-content">Contact Us</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i
-                class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                    class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
         </ul>
       </nav><!-- .navbar -->
 
@@ -85,44 +72,23 @@
   <!-- End Header -->
 
 
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></li>
-      <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></li>
-      <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"></li>
-      <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="./assets/Images/hon1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./assets/Images/hon2.webp" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./assets/Images/hon3.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./assets/Images/hon4.webp" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./assets/Images/hon5.jpeg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-
-
+  <ul class="jc-slider list-unstyled">
+    <li class="jc-animation">
+      <img src="./assets/Images/hon1.jpg" class="d-block w-100" alt="...">
+    </li>
+    <li class="jc-animation">
+      <img src="./assets/Images/hon1.jpg" class="d-block w-100" alt="...">
+    </li>
+    <li class="jc-animation">
+      <img src="./assets/Images/hon1.jpg" class="d-block w-100" alt="...">
+    </li>
+    <li class="jc-animation">
+      <img src="./assets/Images/hon1.jpg" class="d-block w-100" alt="...">
+    </li>
+    <li class="jc-animation">
+      <img src="./assets/Images/hon1.jpg" class="d-block w-100" alt="...">
+    </li>
+  </ul>
 
 
   <main id="main">
@@ -134,6 +100,7 @@
         font-weight: normal;
         font-style: normal;
       }
+
       .nav-content {
         font-family: 'Playfair Display';
       }
@@ -456,7 +423,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""><span>ur Services</span> </h1>
+          <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""><span>ur Services</span>
+          </h1>
           <div class="section-underline">
             <div class="underline-one"></div>
             <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
@@ -504,9 +472,6 @@
 
       </div>
     </section>
-
-
-
 
     <style>
       p.about-content {
@@ -582,6 +547,235 @@
         background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='0.5' stroke='hsla(54, 79%, 84%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,-0.23)' fill='url(%23a)'/></svg>")
       }
     </style>
+
+
+
+
+    <!-- ======= Gallery ======= -->
+
+    <style>
+      .section {
+        position: relative;
+        width: calc(min(80rem, 93%));
+        margin: 0 auto;
+        column-gap: 5rem;
+        padding-block: min(20vh, 3rem);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .swiper-container {
+        position: relative;
+      }
+
+      .swiper {
+        width: 100%;
+        padding: 60px 0 95px 0;
+      }
+
+      .swiper-slide {
+        width: 10rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        position: relative;
+        border-radius: 12px;
+        box-shadow: -1px 5px 15px #0000001f;
+      }
+
+      .swiper-slide .slide-content {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        width: 90%;
+      }
+
+      .swiper-slide--one {
+        background: url('./assets/Images/hon1.jpg');
+      }
+
+      .swiper-slide--two {
+        background: url('./assets/Images/hon2.webp');
+      }
+
+      .swiper-slide--three {
+        background: url('./assets/Images/hon3.jpg');
+      }
+
+      .swiper-slide--four {
+        background: url('./assets/Images/hon4.webp');
+      }
+
+      .swiper-slide--five {
+        background: url('./assets/Images/hon5.jpeg');
+      }
+
+      .swiper-slide--six {
+        background: url('./assets/Images/20969052_honey1\ [Converted].png');
+      }
+
+      .swiper-button-prev {
+        background: white;
+        border-radius: 50%;
+        top: 50%;
+        left: 2px;
+        width: 27px;
+        height: 27px;
+        z-index: 1000;
+        box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
+      }
+
+      .swiper-button-prev::after {
+        font-size: 1.2rem;
+        content: "";
+      }
+
+      .swiper-button-prev svg {
+        width: 25px;
+      }
+
+
+      .swiper-button-next {
+        background: white;
+        border-radius: 50%;
+        top: 50%;
+        right: 2px;
+        width: 27px;
+        height: 27px;
+        box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
+      }
+
+      .swiper-button-next::after {
+        font-size: 1.4rem;
+        content: "";
+      }
+
+      .swiper-button-next svg {
+        width: 25px;
+      }
+
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none;
+      }
+
+      @media (min-width: 760px) {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+
+          display: flex;
+        }
+
+      }
+    </style>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""><span>ur Gallery</span>
+        </h1>
+        <div class="section-underline">
+          <div class="underline-one"></div>
+          <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
+          <div class="underline-two"></div>
+        </div>
+      </div>
+
+
+
+      <div class="swiper-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--two">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--three">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--four">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--five">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--six">
+              <div class="slide-content">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+          </svg>
+
+        </div>
+        <div class="swiper-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+
+        </div>
+      </div>
+
+    </section>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 4,
+          slideShadows: true
+        },
+        loop: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        keyboard: {
+          enabled: true
+        },
+        mousewheel: {
+          thresholdDelta: 100
+        },
+        breakpoints: {
+          560: {
+            slidesPerView: 2.5
+          },
+          768: {
+            slidesPerView: 3
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        }
+      });
+    </script>
+    <!-- End Gallery -->
 
 
 
@@ -809,6 +1003,22 @@
       }
     </style>
 
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg ">
+        <div class="modal-content">
+
+          <div class="modal-body" style="height: 600px;">
+
+          </div>
+
+        </div>
+        <div class="modal-addition ">
+          <img src="./assets/img/cargo-service.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
 
 
     <style>
@@ -834,8 +1044,6 @@
           left: 100%;
         }
       }
-
-     
     </style>
 
 
@@ -858,39 +1066,50 @@
 
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg ">
-        <div class="modal-content">
 
-          <div class="modal-body" style="height: 600px;">
 
-          </div>
-
-        </div>
-        <div class="modal-addition ">
-          <img src="./assets/img/cargo-service.jpg" alt="">
-        </div>
-      </div>
-    </div>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
+
+
     <script>
 
       const contactModal = document.getElementById('contactModal')
       contactModal.addEventListener('shown.bs.modal', event => {
-        console.log("test");
         $('.modal-addition').addClass('honeybeePop');
       });
       contactModal.addEventListener('hidden.bs.modal', event => {
-        console.log("testoff");
         $('.modal-addition').removeClass('honeybeePop');
       })
 
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/Slider/jquery.jcslider.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.jc-slider').jcSlider({
+          animationIn: "lightSpeedIn",
+          animationOut: "lightSpeedOut",
+          stopOnHover: false, // true by default
+          loop: true // true by default
+        });
+      });
     </script>
 
 
