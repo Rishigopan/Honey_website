@@ -56,7 +56,7 @@
           <li><a href="#products" class="mx-4 nav-content">Shop</a></li>
           <li><a href="#about" class="mx-4 nav-content">About Us</a></li>
           <li><a href="#services" class="mx-4 nav-content">Services</a></li>
-          <li><a href="" class="mx-4 nav-content">Contact Us</a></li>
+          <li><a href="about.html" class="mx-4 nav-content">Contact Us</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -285,6 +285,8 @@
       }
 
       .flip-card-back {
+        background-image: url("./assets/Images/IMAGE\ BACK\ SIDE.jpg");
+
         background-color: yellow;
         border: 4px solid orange;
         transform: rotateY(180deg);
@@ -293,19 +295,6 @@
         box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
       }
 
-      .flipbackground-img {
-        background-image: url("./assets/Images/flipbackbg.png");
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-
-        opacity: 0.7;
-        height: 300px;
-        width: 300px;
-        /* border-radius: 50%; */
-      }
 
       /*  carousel indicators */
       .carousel-indicators li {
@@ -327,14 +316,20 @@
 
       .seemore {
         text-decoration: none;
-        color: #b3b009;
+        color: #a23b06;
         font-size: 30px;
       }
 
       .seemore:hover {
         text-decoration: none;
-        color: #ede917;
+        color: #ce4b09;
         font-size: 31px;
+      }
+
+      .buy_btn{
+        background-color: green;
+        color: white;
+        border-radius: 10px;
       }
     </style>
 
@@ -400,12 +395,12 @@
                   <img src="./assets/Images/product 1.jpg">
                 </div>
                 <div class="flip-card-back">
-                  <div class="flipbackground-img m-0 p-0 ">
-                    <!-- Your background image goes here -->
-                  </div>
-                  <h1 class="mt-5">Raw Honey</h1>
-                  <p>Architect & Engineer</p>
+                  <h2 class="mt-5">Raw Honey</h2>
                   <p>1000 gm</p>
+                  <h5><b>₹ 300</b></h5>
+                  <a href="https://wa.me/7094768480?text=Hai%20I%20want%20this%20product%20Raw%20Honey" target="_blank">
+                    <button class="buy_btn px-3">buy</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -418,10 +413,13 @@
                   <img src="./assets/Images/product 2.jpg">
                 </div>
                 <div class="flip-card-back">
-                  <h1>John Doe</h1>
-                  <p>Architect & Engineer</p>
-                  <p>We love that guy</p>
-                </div>
+                  <h2 class="mt-5">Multi Honey</h2>
+                  <p>1000 gm</p>
+                  <h5><b>₹ 350</b></h5>
+                  <a href="https://wa.me/7094768480?text=Hai%20I%20want%20this%20product%20Multi%20Flower%20Honey" target="_blank">
+                    <button class="buy_btn px-3">buy</button>
+                  </a>
+                  </div>
               </div>
             </div>
           </div>
@@ -430,13 +428,15 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/Images/PRODUCT 3.jpg">
+                  <img src="./assets/Images/product 3.jpg">
                 </div>
                 <div class="flip-card-back">
-                  <h1>John Doe</h1>
-                  <p>Architect & Engineer</p>
-                  <p>We love that guy</p>
-
+                  <h2 class="mt-5">Honey With<br> Comb</h2>
+                  <p>1000 gm</p>
+                  <h5><b>₹ 400</b></h5>
+                  <a href="https://wa.me/7094768480?text=Hai%20I%20want%20this%20product%20Honey%20with%20Comb" target="_blank">
+                    <button class="buy_btn px-3">buy</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -445,7 +445,7 @@
         </div>
         <div class="text-center mt-5">
           <a href="products.html" class="seemore">
-            <h3>See More...</h3>
+            <h2>See More...</h2>
           </a>
         </div>
 
@@ -560,12 +560,13 @@
 
       .section-title .section-underline .underline-two {
         background: rgb(75, 14, 14);
-        background: linear-gradient(90deg, rgba(75, 14, 14, 1) 0%, rgba(121, 9, 45, 1) 44%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(90deg, #a23b06 0%, #bd4f18 44%, #ffe3da 100%);
       }
 
       .section-title .section-underline .underline-one {
         background: rgb(75, 14, 14);
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(121, 9, 45, 1) 44%, rgba(75, 14, 14, 1) 100%);
+        background: linear-gradient(90deg, #ffe3da 0%, #bd4f18 44%, #a23b06 100%);
+
       }
 
       .section-title .section-underline .underline-image {
@@ -579,7 +580,7 @@
       }
 
       .hexabackground {
-        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='0.5' stroke='hsla(54, 79%, 84%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,-0.23)' fill='url(%23a)'/></svg>")
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(54, 0%, 100%, 1)'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='0.5' stroke='hsla(54, 98%, 89%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
       }
     </style>
 
@@ -591,7 +592,7 @@
     <section id="faq" class="faq hexabackground">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h1 class="title-content"> <span>Frequently Asked Questions</span> </h1>
+          <h1 class="title-content"> <span>FAQ</span> </h1>
           <div class="section-underline">
             <div class="underline-one"></div>
             <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
