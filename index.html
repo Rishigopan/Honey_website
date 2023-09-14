@@ -19,6 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,6 +41,7 @@
   <header id="header" class="header  align-items-center hexabackground">
 
     <div class="">
+      
       <img src="assets/img/Logos/SIJO final logo.png" height="150px" width="200px" alt="">
     </div>
     <div class="container-fluid headernav align-items-center justify-content-center ">
@@ -126,6 +128,18 @@
   <main id="main">
 
     <style>
+      @font-face {
+        font-family: 'Buljirya';
+        src: url('./assets/font/Buljirya.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      .nav-content {
+        font-family: 'Playfair Display';
+      }
+
+
+
       .hexagon {
         display: flex;
         justify-content: center;
@@ -272,12 +286,25 @@
 
       .flip-card-back {
         background-color: yellow;
-        color: white;
         border: 4px solid orange;
         transform: rotateY(180deg);
         -webkit-box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
         -moz-box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
         box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
+      }
+
+      .flipbackground-img {
+        background-image: url("./assets/Images/flipbackbg.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        opacity: 0.7;
+        height: 300px;
+        width: 300px;
+        /* border-radius: 50%; */
       }
 
       /*  carousel indicators */
@@ -297,6 +324,18 @@
       a.mx-4.nav-content {
         font-size: 22px;
       }
+
+      .seemore {
+        text-decoration: none;
+        color: #b3b009;
+        font-size: 30px;
+      }
+
+      .seemore:hover {
+        text-decoration: none;
+        color: #ede917;
+        font-size: 31px;
+      }
     </style>
 
     <!-- ======= About Us Section ======= -->
@@ -315,7 +354,7 @@
               <h1 class="title-content"> <span>Why Choose Us</span> </h1>
               <div class="section-underline">
                 <div class="underline-one"></div>
-                <div class="underline-image"><img src="./assets/img/features-1.jpg" alt=""></div>
+                <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
                 <div class="underline-two"></div>
               </div>
             </div>
@@ -343,10 +382,11 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h1 class="title-content"> <img src="./assets/img/features-2.jpg" alt=""><span>ur Products</span> </h1>
+          <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""><span>ur Products</span>
+          </h1>
           <div class="section-underline">
             <div class="underline-one"></div>
-            <div class="underline-image"><img src="./assets/img/features-1.jpg" alt=""></div>
+            <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
             <div class="underline-two"></div>
           </div>
         </div>
@@ -357,7 +397,25 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/img/features-3.jpg">
+                  <img src="./assets/Images/product 1.jpg">
+                </div>
+                <div class="flip-card-back">
+                  <div class="flipbackground-img m-0 p-0 ">
+                    <!-- Your background image goes here -->
+                  </div>
+                  <h1 class="mt-5">Raw Honey</h1>
+                  <p>Architect & Engineer</p>
+                  <p>1000 gm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/product 2.jpg">
                 </div>
                 <div class="flip-card-back">
                   <h1>John Doe</h1>
@@ -372,27 +430,13 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/img/features-3.jpg">
+                  <img src="./assets/Images/PRODUCT 3.jpg">
                 </div>
                 <div class="flip-card-back">
                   <h1>John Doe</h1>
                   <p>Architect & Engineer</p>
                   <p>We love that guy</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 d-flex justify-content-center">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/img/features-3.jpg">
-                </div>
-                <div class="flip-card-back">
-                  <h1>John Doe</h1>
-                  <p>Architect & Engineer</p>
-                  <p>We love that guy</p>
                 </div>
               </div>
             </div>
@@ -400,7 +444,9 @@
 
         </div>
         <div class="text-center mt-5">
-          <a href="products.html">See More</a>
+          <a href="products.html" class="seemore">
+            <h3>See More...</h3>
+          </a>
         </div>
 
       </div>
@@ -410,10 +456,10 @@
       <div class="container">
 
         <div class="section-title">
-          <h1 class="title-content"> <img src="./assets/img/features-2.jpg" alt=""><span>ur Services</span> </h1>
+          <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""><span>ur Services</span> </h1>
           <div class="section-underline">
             <div class="underline-one"></div>
-            <div class="underline-image"><img src="./assets/img/features-1.jpg" alt=""></div>
+            <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
             <div class="underline-two"></div>
           </div>
         </div>
@@ -487,13 +533,15 @@
         text-align: center;
         font-size: 50px;
         font-weight: 900;
+        color: #a23b06;
       }
 
       .section-title .title-content img {
         height: 70px;
         width: 70px;
-        border-radius: 50%;
         margin-top: -28px;
+        /* border-radius: 50%; */
+
       }
 
 
@@ -527,11 +575,10 @@
       .section-title .section-underline .underline-image img {
         height: 20px;
         width: 20px;
-        border-radius: 50%;
+        /* border-radius: 50%; */
       }
 
       .hexabackground {
-
         background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='0.5' stroke='hsla(54, 79%, 84%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,-0.23)' fill='url(%23a)'/></svg>")
       }
     </style>
@@ -547,7 +594,7 @@
           <h1 class="title-content"> <span>Frequently Asked Questions</span> </h1>
           <div class="section-underline">
             <div class="underline-one"></div>
-            <div class="underline-image"><img src="./assets/img/features-1.jpg" alt=""></div>
+            <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
             <div class="underline-two"></div>
           </div>
         </div>
@@ -659,7 +706,7 @@
           <h1 class="title-content"><span>Sweet Talks</span> </h1>
           <div class="section-underline">
             <div class="underline-one"></div>
-            <div class="underline-image"><img src="./assets/img/features-1.jpg" alt=""></div>
+            <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
             <div class="underline-two"></div>
           </div>
         </div>
@@ -733,7 +780,7 @@
       <div id="map-container" style="width: 100%; height: 400px;"></div>
 
     </section>
-        <!-- ======= End Map Section ======= -->
+    <!-- ======= End Map Section ======= -->
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
