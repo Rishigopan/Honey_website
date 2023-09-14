@@ -728,6 +728,119 @@
       </div>
     </section><!-- Sweet Talks Section -->
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+      Launch demo modal
+    </button>
+
+    <style>
+      .modal-addition {
+        /* background-color: red; */
+        position: absolute;
+        top: 200;
+        z-index: -1;
+        transform: rotate(90deg);
+        left: 50%;
+      }
+
+      .modal-addition.honeybeePop {
+        transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+        left: 70%;
+        transition-delay: .5s;
+      }
+
+      .modal-addition img {
+        width: 300px;
+        height: 500px;
+      }
+    </style>
+
+
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      .object {
+        width: 50px;
+        height: 50px;
+        background-color: #3498db;
+        position: fixed;
+        top: 10%;
+        left: 0;
+        animation: moveRight 4s linear forwards infinite;
+      }
+
+      @keyframes moveRight {
+        to {
+          left: 100%;
+        }
+      }
+
+     
+    </style>
+
+
+    <div class="object"></div>
+    <section class="content">
+      <div class="spacer"></div>
+    </section>
+
+    <script>
+      const object = document.querySelector(".object");
+      const content = document.querySelector(".content");
+
+      content.addEventListener("scroll", () => {
+        const scrollPercentage = (content.scrollTop / (content.scrollHeight - content.clientHeight)) * 100;
+        const newPosition = (window.innerWidth / 100) * scrollPercentage;
+        object.style.left = `${newPosition}px`;
+      });
+
+    </script>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg ">
+        <div class="modal-content">
+
+          <div class="modal-body" style="height: 600px;">
+
+          </div>
+
+        </div>
+        <div class="modal-addition ">
+          <img src="./assets/img/cargo-service.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+
+      const contactModal = document.getElementById('contactModal')
+      contactModal.addEventListener('shown.bs.modal', event => {
+        console.log("test");
+        $('.modal-addition').addClass('honeybeePop');
+      });
+      contactModal.addEventListener('hidden.bs.modal', event => {
+        console.log("testoff");
+        $('.modal-addition').removeClass('honeybeePop');
+      })
+
+    </script>
+
+
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
