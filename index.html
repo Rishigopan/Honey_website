@@ -42,10 +42,10 @@
 
 </head>
 
-<body>
+<body class="hexabackground">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header  align-items-center hexabackground">
+  <header id="header" class="header  align-items-center ">
 
     <div class="">
       <img src="assets/img/Logos/SIJO final logo.png" height="150px" width="200px" alt="">
@@ -58,11 +58,11 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active mx-4 nav-content">Home</a></li>
-          <li><a href="#products" class="mx-4 nav-content">Shop</a></li>
-          <li><a href="#about" class="mx-4 nav-content">About Us</a></li>
-          <li><a href="#services" class="mx-4 nav-content">Services</a></li>
-          <li><a href="" class="mx-4 nav-content">Contact Us</a></li>
+          <li><a href="index.html" class="active mx-5 nav-content">Home</a></li>
+          <li><a href="#products" class="mx-5 nav-content">Shop</a></li>
+          <li><a href="#about" class="mx-5 nav-content">About Us</a></li>
+          <li><a href="#services" class="mx-5 nav-content">Services</a></li>
+          <li><a href="" class="mx-5 nav-content">Contact Us</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -74,7 +74,7 @@
 
   <ul class="jc-slider list-unstyled">
     <li class="jc-animation">
-      <img src="./assets/Images/hon1.jpg" class="d-block w-100" alt="...">
+      <img src="./assets/Images/frntcarosel1.jpg" class="d-block w-100" alt="...">
     </li>
     <li class="jc-animation">
       <img src="./assets/Images/hon2.webp" class="d-block w-100" alt="...">
@@ -193,7 +193,7 @@
       }
 
       @media screen and (max-width: 920px) {
-        .services-tile:first-child  {
+        .services-tile:first-child {
           margin-bottom: 120px;
         }
       }
@@ -285,7 +285,7 @@
       }
 
       a.mx-4.nav-content {
-        font-size: 22px;
+        font-size: 20px;
       }
 
       .seemore {
@@ -305,10 +305,16 @@
         color: white;
         border-radius: 10px;
       }
+
+      .about_li {
+        font-family: monospace;
+        font-size: 30px !important;
+
+      }
     </style>
 
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about pt-0 mt-5 hexabackground">
+    <section id="about" class="about pt-0 mt-5 ">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
@@ -316,7 +322,7 @@
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
           </div>
-          <div class="col-lg-6 content order-last  order-lg-first">
+          <div class="col-lg-6 content order-last  order-lg-first mt-5">
             <div class="section-title">
               <h1 class="title-content"> <span>Why Choose Us</span> </h1>
               <div class="section-underline">
@@ -330,9 +336,9 @@
               any further information.
               But hear us out. Let us explain to you why you need to start buying our honey now.
             <ul>
-              <li class="">100% Natural</li>
-              <li class="">Organic Natural Honey</li>
-              <li class="">Guaranteed Quality</li>
+              <li class="about_li">100% Natural</li>
+              <li class="about_li">Organic Natural Honey</li>
+              <li class="about_li">Guaranteed Quality</li>
             </ul>
 
             </p>
@@ -345,7 +351,7 @@
     </section>
 
     <!-- ======= Product Section ======= -->
-    <section id="products" class="products hexabackground">
+    <section id="products" class="products ">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -360,11 +366,11 @@
 
         <div class="row gy-4 mt-3">
 
-          <div class="col-lg-4 d-flex justify-content-center">
+          <div class="col-lg-3 d-flex justify-content-center">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/Images/product 1.jpg">
+                  <img src="./assets/Images/product 5.jpg">
                 </div>
                 <div class="flip-card-back">
                   <h2 class="mt-5">Raw Honey</h2>
@@ -378,7 +384,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex justify-content-center">
+          <div class="col-lg-3 d-flex justify-content-center">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -397,11 +403,30 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex justify-content-center">
+          <div class="col-lg-3 d-flex justify-content-center">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/Images/product 3.jpg">
+                  <img src="./assets/Images/PRODUCT 3.jpg">
+                </div>
+                <div class="flip-card-back">
+                  <h2 class="mt-5">Honey With<br> Comb</h2>
+                  <p>1000 gm</p>
+                  <h5><b>₹ 400</b></h5>
+                  <a href="https://wa.me/7094768480?text=Hai%20I%20want%20this%20product%20Honey%20with%20Comb"
+                    target="_blank">
+                    <button class="buy_btn px-3">buy</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/product 4.jpg">
                 </div>
                 <div class="flip-card-back">
                   <h2 class="mt-5">Honey With<br> Comb</h2>
@@ -419,7 +444,7 @@
         </div>
         <div class="text-center mt-5">
           <a href="products.html" class="seemore">
-            <h2>See More...</h2>
+            <h5>See More...</h5>
           </a>
         </div>
 
@@ -449,8 +474,9 @@
                 </div>
               </div>
               <div class="our-services-title-section">
-                <h6 class="our-services-title">Honey Production</h6>
-                <p class="our-services-subtitle">hhrehwerhwurheurewrhw <br> rwhrhrwhrhwirwhello</p>
+                <h6 class="our-services-title">Honey sales</h6>
+                <p class="our-services-subtitle">We sell unpasteurised and unprocessed pure honey free from additives,
+                  preservatives and added sugar.</p>
               </div>
 
             </div>
@@ -465,8 +491,9 @@
                 </div>
               </div>
               <div class="our-services-title-section">
-                <h6 class="our-services-title">Honey Production</h6>
-                <p class="our-services-subtitle">hhrehwerhwurheurewrhw <br> rwhrhrwhrhwirwhello</p>
+                <h6 class="our-services-title">Beekeeping Gear</h6>
+                <p class="our-services-subtitle">All types of essential equipment and bee farming products will be
+                  delivered at your doorsteps.</p>
               </div>
             </div>
           </div>
@@ -479,8 +506,9 @@
                 </div>
               </div>
               <div class="our-services-title-section">
-                <h6 class="our-services-title">Honey Production</h6>
-                <p class="our-services-subtitle">hhrehwerhwurheurewrhw <br> rwhrhrwhrhwirwhello</p>
+                <h6 class="our-services-title">Beekeeping for beginners </h6>
+                <p class="our-services-subtitle">We provide practical tutorials and tips for beekeeping starters. Learn
+                  the art of beekeeping for free.</p>
               </div>
             </div>
           </div>
@@ -494,8 +522,9 @@
                 </div>
               </div>
               <div class="our-services-title-section">
-                <h6 class="our-services-title">Honey Production</h6>
-                <p class="our-services-subtitle">hhrehwerhwurheurewrhw <br> rwhrhrwhrhwirwhello</p>
+                <h6 class="our-services-title">Bee sales</h6>
+                <p class="our-services-subtitle">We offer bees for sale that are grown directly on our frames and
+                  perfect for your home beehives.</p>
               </div>
 
             </div>
@@ -534,6 +563,7 @@
         font-weight: 900;
         color: #a23b06;
         font-family: Buljirya;
+        margin-top: 20px;
       }
 
       .section-title .title-content img {
@@ -580,7 +610,7 @@
       }
 
       .hexabackground {
-        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(54, 0%, 100%, 1)'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='0.5' stroke='hsla(54, 98%, 89%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(54, 0%, 100%, 1)'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='0.5' stroke='hsla(54, 98%, 89%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
       }
     </style>
 
@@ -814,7 +844,7 @@
     <!-- End Gallery -->
 
     <!-- ======= Sweet Talks Section ======= -->
-    <section id="sweet-talks" class="sweet-talks hexabackground">
+    <section id="sweet-talks" class="sweet-talks ">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h1 class="title-content"><span>Sweet Talks</span> </h1>
@@ -826,7 +856,7 @@
         </div>
         <div class="row">
           <!-- card 1 -->
-          <div class="col-lg-4 col-md-4 col-12 my-1 p-5 ">
+          <div class="col-lg-4 col-md-4 col-12 my-1 px-5 py-1">
             <div class="card sweet_card ">
               <div class="card-body text-center">
                 <img height="120px" width="120px" class="review_img" src="assets/Images/product 2.jpg" alt="">
@@ -839,13 +869,14 @@
                   <span class="fa fa-star checked"></span>
                 </div>
                 <p class="card-text">
-                  Sijo Honey's organic honey is a true taste of nature's sweetness. Its authenticity and rich flavor are unmatched. I highly recommend it to anyone seeking pure, quality honey - a delectable delight!</p>
+                  Sijo Honey's organic honey is a true taste of nature's sweetness. Its authenticity and rich flavor are
+                  unmatched. I highly recommend it to anyone seeking pure, quality honey - a delectable delight!</p>
 
               </div>
             </div>
           </div>
           <!-- card 2 -->
-          <div class="col-lg-4 col-md-4 col-12 my-1 p-5">
+          <div class="col-lg-4 col-md-4 col-12 my-1 px-5" py-1>
             <div class="card sweet_card">
               <div class="card-body text-center">
                 <img height="120px" width="120px" class="review_img" src="assets/img/Sweettalks/girl.png" alt="">
@@ -857,13 +888,15 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star unchecked"></span>
                 </div>
-                <p class="card-text">The original farm organic honey by Sijo Honey is a revelation in the world of natural sweetness. It's not just honey; it's a pure, wholesome experience. Give it a try, and you won't look back!</p>
+                <p class="card-text">The original farm organic honey by Sijo Honey is a revelation in the world of
+                  natural sweetness. It's not just honey; it's a pure, wholesome experience. Give it a try, and you
+                  won't look back!</p>
 
               </div>
             </div>
           </div>
           <!-- card 3 -->
-          <div class="col-lg-4 col-md-4 col-12 my-1 p-5 ">
+          <div class="col-lg-4 col-md-4 col-12 my-1 px-5 py-1">
             <div class="card sweet_card">
               <div class="card-body text-center">
                 <img height="120px" width="120px" class="review_img" src="assets/img/Sweettalks/man.jpg" alt="">
@@ -876,7 +909,8 @@
                   <span class="fa fa-star checked"></span>
                 </div>
                 <p class="card-text">
-                  Sijo Honey's organic honey is a pure, unmatched delight. Its natural sweetness and richness stand out. For genuine organic sweetness, choose Sijo Honey and share the treasure!</p>
+                  Sijo Honey's organic honey is a pure, unmatched delight. Its natural sweetness and richness stand out.
+                  For genuine organic sweetness, choose Sijo Honey and share the treasure!</p>
 
               </div>
             </div>
@@ -889,7 +923,7 @@
     </section><!-- End Sweet Talks Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq hexabackground">
+    <section id="faq" class="faq ">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h1 class="title-content"> <span>FAQ</span> </h1>
@@ -1002,10 +1036,33 @@
 
     <!-- ======= Map Section ======= -->
     <section id="map" class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15790.37050598487!2d77.3083383!3d8.3432112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04576cdd0b6f5b%3A0xf0606f90f94f65de!2sSIJO%20Honey!5e0!3m2!1sen!2sin!4v1694763127147!5m2!1sen!2sin"
-        width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-xl-6 col-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15790.37050598487!2d77.3083383!3d8.3432112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04576cdd0b6f5b%3A0xf0606f90f94f65de!2sSIJO%20Honey!5e0!3m2!1sen!2sin!4v1694763127147!5m2!1sen!2sin"
+              width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-xl-6 col-12">
+            <div class="text-center">
+              <a href="index.html" class="logo d-inline-block">
+                <img height="120px" width="120px" src="assets/img/Logos/SIJO final logo yellow bg.png" alt="">
+              </a>
+              <p>
+                Sijo Honey, Andoor, <br>
+                Kulasekharam, 629 161,<br>
+                Tamil Nadu, India. <br><br>
+                <strong>Phone:</strong> +91 9489868480<br>
+                <strong>Email:</strong> contact@sijohoney.com<br>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
     </section>
     <!-- ======= End Map Section ======= -->
 
@@ -1015,10 +1072,10 @@
     </button>
 
     <style>
-
-      .review_img{
+      .review_img {
         border-radius: 50%;
       }
+
       .modal-addition {
         /* background-color: red; */
         position: absolute;
