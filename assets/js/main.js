@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
    * Sticky header on scroll
    */
   const selectHeader = document.querySelector('#header');
-  if (selectHeader) {
-    document.addEventListener('scroll', () => {
-      window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
-    });
-  }
+  // if (selectHeader) {
+  //   document.addEventListener('scroll', () => {
+  //     window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
+  //   });
+  // }
 
   /**
    * Scroll top button
@@ -100,39 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   });
 
-  /**
-   * Initiate pURE cOUNTER
-   */
-  new PureCounter();
-
-  /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
-   * Init swiper slider with 1 slide at once in desktop view
-   */
-  new Swiper('.slides-1', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
+  
 
   /**
    * Animation on scroll function and init
