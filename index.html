@@ -32,12 +32,14 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <!-- animate CSS stylesheet library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css"> -->
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
@@ -48,12 +50,14 @@
 
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header  align-items-center ">
+  <div class="m-2 d-flex justify-content-center">
+    <img src="assets/Images/sijo logo final.png" height="60px" width="60px" alt="">
+  </div>
+  <header id="header" class="header align-items-center" style="width: 100%; position: sticky;top: 0; z-index: 10000;">
 
-    <div class="">
-      <img src="assets/img/Logos/SIJO final logo.png" height="150px" width="200px" alt="">
-    </div>
-    <div class="container-fluid headernav align-items-center justify-content-center ">
+
+
+    <div class="container-fluid headernav align-items-center justify-content-center">
       <div class="text-end">
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -61,17 +65,17 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active mx-5 nav-content">Home</a></li>
+          <li><a href="index.html" class=" mx-5 nav-content">Home</a></li>
           <li><a href="#products" class="mx-5 nav-content">Shop</a></li>
           <li><a href="#about" class="mx-5 nav-content">About Us</a></li>
           <li><a href="#services" class="mx-5 nav-content">Services</a></li>
           <li><a href="" class="mx-5 nav-content">Contact Us</a></li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
 
     </div>
 
-  </header><!-- End Header -->
+  </header>
   <!-- End Header -->
 
 
@@ -96,19 +100,24 @@
 
 
   <style>
+    .split-slideshow {
+      position: relative;
+      height: 700px;
+    }
+
     .slideshow {
       position: absolute;
       z-index: 1;
       top: 0;
       left: 0;
       width: 100vw;
-      height: 500px;
+      height: 700px;
       overflow: hidden;
     }
 
     .slideshow .slider {
       width: 100vw;
-      height: 500px;
+      height: 700px;
       z-index: 2;
     }
 
@@ -129,12 +138,14 @@
     }
 
     .slideshow .slider .item img {
-      min-width: 101%;
-      min-height: 101%;
-      position: absolute;
-      top: 50%;
+      width: 100%;
+      height: 700px;
+      /* min-width: 100%;
+      min-height: 100%;
+      position: absolute; */
+      /* top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); */
     }
 
     .slideshow .slick-dots {
@@ -239,34 +250,29 @@
     }
   </style>
 
+  <main id="main">
 
-  <div class="split-slideshow" style="position:relative ; height: 500px;">
-    <div class="slideshow">
-      <div class="slider">
-        <div class="item">
-          <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg" />
-        </div>
-        <div class="item">
-          <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg" />
-        </div>
-        <div class="item">
-          <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg" />
-        </div>
-        <div class="item">
-          <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg" />
+    <div class="split-slideshow">
+      <div class="slideshow">
+        <div class="slider">
+          <div class="item">
+            <img class="img-fluid" src="./assets/Images/carousel.jpg" />
+          </div>
+          <div class="item">
+            <img class="img-fluid" src="./assets/Images/carousel  2.jpg" />
+          </div>
+          <div class="item">
+            <img class="img-fluid" src="./assets/Images/frntcarosel1.jpg" />
+          </div>
         </div>
       </div>
+      <div class="slideshow-text">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
     </div>
-    <div class="slideshow-text">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-  </div>
-
-
-  <main id="main">
 
     <style>
       @font-face {
@@ -430,7 +436,7 @@
         height: 300px;
         width: 300px;
         border-radius: 50%;
-        border: 4px solid orange;
+        border: 4px solid #fc8a0c;
         -webkit-box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
         -moz-box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
         box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
@@ -439,7 +445,7 @@
       .flip-card-back {
         background-image: url("./assets/Images/IMAGE\ BACK\ SIDE.jpg");
         background-color: yellow;
-        border: 4px solid orange;
+        border: 4px solid #fc8a0c;
         transform: rotateY(180deg);
         -webkit-box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
         -moz-box-shadow: 0px 10px 30px 0px rgba(242, 187, 116, 1);
@@ -486,13 +492,14 @@
         font-size: 30px !important;
 
       }
-      .product_row{
+
+      .product_row {
         margin-bottom: 150px;
       }
     </style>
 
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about pt-0 mt-5 ">
+    <section id="about" class="about pt-5 ">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
@@ -529,11 +536,11 @@
     </section>
 
     <!-- ======= Product Section ======= -->
-    <section id="products" class="products ">
+    <section id="products" class="products" style="padding-bottom: 260px;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""><span>ur Products</span>
+          <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""> <span>ur Products</span>
           </h1>
           <div class="section-underline">
             <div class="underline-one"></div>
@@ -569,7 +576,7 @@
                   <img src="./assets/Images/product 2.jpg">
                 </div>
                 <div class="flip-card-back">
-                  <h2 class="mt-5">Multi Honey</h2>
+                  <h2 class="mt-5">Multi Flower <br>Honey</h2>
                   <p>1000 gm</p>
                   <h5><b>₹ 350</b></h5>
                   <a href="https://wa.me/7094768480?text=Hai%20I%20want%20this%20product%20Multi%20Flower%20Honey"
@@ -607,10 +614,10 @@
                   <img src="./assets/Images/product 4.jpg">
                 </div>
                 <div class="flip-card-back">
-                  <h2 class="mt-5">Honey With<br> Comb</h2>
+                  <h2 class="mt-5">Honey With<br> Dates</h2>
                   <p>1000 gm</p>
-                  <h5><b>₹ 400</b></h5>
-                  <a href="https://wa.me/7094768480?text=Hai%20I%20want%20this%20product%20Honey%20with%20Comb"
+                  <h5><b>₹ 450</b></h5>
+                  <a href="https://wa.me/7094768480?text=Hai%20I%20want%20this%20product%20Honey%20with%20Dates"
                     target="_blank">
                     <button class="buy_btn px-3">buy</button>
                   </a>
@@ -633,7 +640,7 @@
       <img src="./assets/Images/r copy.png" style="margin-top: -291px; position: absolute; z-index: 1;" alt="">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" style="margin-top: -20px;">
           <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""> <span>ur Services</span>
           </h1>
           <div class="section-underline">
@@ -643,13 +650,13 @@
           </div>
         </div>
 
-        <div class="row">
-
+        <div class="row" style="padding-top: 30px;">
           <div class="col-lg-3 col-md-6 col-12">
             <div class="d-flex justify-content-center services-tile">
               <div class="hexagon-large">
                 <div class="hexagon">
-                  <div class="hexagon-text-content"><img height="90px" width="90px" src="./assets/img/about.jpg"></div>
+                  <div class="hexagon-text-content"><img height="60px" width="60px"
+                      src="./assets/Images/honey sales.png"></div>
                 </div>
               </div>
               <div class="our-services-title-section">
@@ -666,7 +673,8 @@
             <div class="d-flex justify-content-center services-tile">
               <div class="hexagon-large">
                 <div class="hexagon">
-                  <div class="hexagon-text-content"><img height="90px" width="90px" src="./assets/img/about.jpg"></div>
+                  <div class="hexagon-text-content"><img height="60px" width="60px"
+                      src="./assets/Images/bee keeping.png"></div>
                 </div>
               </div>
               <div class="our-services-title-section">
@@ -681,7 +689,8 @@
             <div class="d-flex justify-content-center services-tile">
               <div class="hexagon-large">
                 <div class="hexagon">
-                  <div class="hexagon-text-content"><img height="90px" width="90px" src="./assets/img/about.jpg"></div>
+                  <div class="hexagon-text-content"><img height="60px" width="60px"
+                      src="./assets/Images/bee keepimng begineers.png"></div>
                 </div>
               </div>
               <div class="our-services-title-section">
@@ -696,7 +705,7 @@
             <div class="d-flex justify-content-center services-tile">
               <div class="hexagon-large">
                 <div class="hexagon">
-                  <div class="hexagon-text-content"><img height="90px" width="90px" src="./assets/img/about.jpg">
+                  <div class="hexagon-text-content"><img height="60px" width="60px" src="./assets/Images/bee sales.png">
                   </div>
                 </div>
               </div>
@@ -735,6 +744,8 @@
         margin-bottom: 70px;
       }
 
+
+
       .section-title .title-content {
         text-align: center;
         font-size: 35px;
@@ -750,6 +761,30 @@
         margin-top: -28px;
         /* border-radius: 50%; */
 
+      }
+
+      @media (max-width: 760px) {
+        .section-title .title-content {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 700;
+          color: #a23b06;
+          font-family: Buljirya;
+          margin-top: 10px;
+        }
+
+        .section-title .title-content img {
+          height: 40px;
+          width: 40px;
+          margin-top: -20px;
+          /* border-radius: 50%; */
+        }
+
+        .section-title .section-underline .underline-image img {
+          height: 15px;
+          width: 15px;
+          /* border-radius: 50%; */
+        }
       }
 
 
@@ -768,12 +803,12 @@
 
       .section-title .section-underline .underline-two {
         background: rgb(75, 14, 14);
-        background: linear-gradient(90deg, #a23b06 0%, #bd4f18 44%, #ffe3da 100%);
+        background: linear-gradient(90deg, #a23b06 0%, #bd4f18 44%, #5c312300 100%);
       }
 
       .section-title .section-underline .underline-one {
         background: rgb(75, 14, 14);
-        background: linear-gradient(90deg, #ffe3da 0%, #bd4f18 44%, #a23b06 100%);
+        background: linear-gradient(90deg, #ffffff00 0%, #bd4f18 44%, #a23b06 100%);
 
       }
 
@@ -917,13 +952,17 @@
         }
 
       }
+
+      .card-text {
+        font-size: 15px;
+      }
     </style>
 
 
     <section class="section">
 
       <div class="section-title">
-        <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""><span>ur Gallery</span>
+        <h1 class="title-content"> <img src="./assets/Images/title contents png.png" alt=""> <span>ur Gallery</span>
         </h1>
         <div class="section-underline">
           <div class="underline-one"></div>
@@ -994,6 +1033,7 @@
           modifier: 4,
           slideShadows: true
         },
+        autoplay: true,
         loop: true,
         // Navigation arrows
         navigation: {
@@ -1003,9 +1043,9 @@
         keyboard: {
           enabled: true
         },
-        mousewheel: {
-          thresholdDelta: 100
-        },
+        // mousewheel: {
+        //   thresholdDelta: 100
+        // },
         breakpoints: {
           560: {
             slidesPerView: 2.5
@@ -1019,6 +1059,8 @@
         }
       });
     </script>
+
+
     <!-- End Gallery -->
 
     <!-- ======= Sweet Talks Section ======= -->
@@ -1046,9 +1088,10 @@
                   <span class="fa fa-star checked "></span>
                   <span class="fa fa-star checked"></span>
                 </div>
-                <p class="card-text">
-                  Sijo Honey's organic honey is a true taste of nature's sweetness. Its authenticity and rich flavor are
-                  unmatched. I highly recommend it to anyone seeking pure, quality honey - a delectable delight!</p>
+                <p class="card-text mt-4">
+                  "Sijo Honey's organic honey is a true taste of nature's sweetness. Its authenticity and rich flavor
+                  are
+                  unmatched. I highly recommend it to anyone seeking pure, quality honey - a delectable delight!"</p>
 
               </div>
             </div>
@@ -1066,9 +1109,9 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star unchecked"></span>
                 </div>
-                <p class="card-text">The original farm organic honey by Sijo Honey is a revelation in the world of
+                <p class="card-text mt-4">"The original farm organic honey by Sijo Honey is a revelation in the world of
                   natural sweetness. It's not just honey; it's a pure, wholesome experience. Give it a try, and you
-                  won't look back!</p>
+                  won't look back!"</p>
 
               </div>
             </div>
@@ -1086,9 +1129,10 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                 </div>
-                <p class="card-text">
-                  Sijo Honey's organic honey is a pure, unmatched delight. Its natural sweetness and richness stand out.
-                  For genuine organic sweetness, choose Sijo Honey and share the treasure!</p>
+                <p class="card-text mt-4">
+                  "Sijo Honey's organic honey is a pure, unmatched delight. Its natural sweetness and richness stand
+                  out.
+                  For genuine organic sweetness, choose Sijo Honey and share the treasure!"</p>
 
               </div>
             </div>
@@ -1104,7 +1148,7 @@
     <section id="faq" class="faq ">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h1 class="title-content"> <span>FAQ</span> </h1>
+          <h1 class="title-content"> <span>F . A . Q</span> </h1>
           <div class="section-underline">
             <div class="underline-one"></div>
             <div class="underline-image"><img src="./assets/Images/title contents png.png" alt=""></div>
@@ -1227,7 +1271,10 @@
               <a href="index.html" class="logo d-inline-block">
                 <img height="120px" width="120px" src="assets/img/Logos/SIJO final logo yellow bg.png" alt="">
               </a>
-              <p>Sijo Honey is the creation of a humble beekeeper, not a honey reseller. The name 'Sijo' is a tribute to his late second son, and it embodies decades of dedication in apiculture. For 40 years, he has nurtured bees with care, offering the purest, organic honey at an affordable price. Sijo Honey is a legacy of love and authenticity.</p>
+              <p>Sijo Honey is the creation of a humble beekeeper, not a honey reseller. The name 'Sijo' is a tribute to
+                his late second son, and it embodies decades of dedication in apiculture. For 40 years, he has nurtured
+                bees with care, offering the purest, organic honey at an affordable price. Sijo Honey is a legacy of
+                love and authenticity.</p>
 
               <div class="row">
                 <div class="col-6">
@@ -1236,18 +1283,18 @@
                     vendalicode (po), Kulasekharam,<br>
                     Kanyakumari-District, 629 161,<br>
                     Tamil Nadu, India. <br>
-                    </p>
+                  </p>
                 </div>
                 <div class="col-6">
                   <p>
-                
+
                     <strong>Phone:</strong> +91 9489868480<br>
                     <strong>Email:</strong> contact@sijohoney.com<br>
                   </p>
-                  <h6> follow us on   </h6>
+                  <h6> follow us on </h6>
                 </div>
               </div>
-            
+
             </div>
 
           </div>
@@ -1315,14 +1362,46 @@
         position: relative;
       }
 
-      .object {
+      .beeleft {
         width: 50px;
         height: 50px;
-        background-color: #3498db;
+        /* background-color: #3498db; */
         position: fixed;
         top: 10%;
-        left: 0;
-        animation: moveRight 4s linear forwards infinite;
+        left: -60px;
+        z-index: 10000;
+        /* animation:moveRight 4s linear infinite, upAndDown 0.8s ease-in-out infinite; */
+      }
+
+      .beeleft img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .beeright {
+        width: 50px;
+        height: 50px;
+        /* background-color: #3498db; */
+        position: fixed;
+        bottom: 10%;
+        right: -60px;
+        z-index: 10000;
+
+      }
+
+      .beeright img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .footer {
+        background-image: url('./assets/Images/footer.jpg');
+        width: 100%;
+        height: 700px;
+      }
+
+      .left_vector{
+        height: fit-content;
       }
 
       @keyframes moveRight {
@@ -1330,17 +1409,58 @@
           left: 100%;
         }
       }
+
+      @keyframes moveLeft {
+        to {
+          right: 100%;
+        }
+      }
+
+      @keyframes upAndDown {
+
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-50px);
+          /* Adjust the distance for the "up" part */
+        }
+      }
     </style>
 
+    <script>
+      function repeatAnimation() {
+        const element = document.querySelector('.beeleft');
+        element.style.animation = 'none';
+        setTimeout(function () {
+          element.style.animation = 'moveRight 4s linear , upAndDown 0.8s ease-in-out infinite';
+        }, 2000);
+      }
 
-    <div class="object"></div>
-    <section class="content">
-      <div class="spacer"></div>
-    </section>
+      function repeatAnimation2() {
+        const element2 = document.querySelector('.beeright');
+        element2.style.animation = 'none';
+        setTimeout(function () {
+          element2.style.animation = 'moveLeft 4s linear , upAndDown 0.8s ease-in-out infinite';
+        }, 2000);
+      }
+
+
+      setInterval(repeatAnimation, 8000);
+
+      setInterval(repeatAnimation2, 12000); 
+    </script>
+
+
+
+    <div class="beeleft"> <img src="./assets/Images/bee left.png" alt=""> </div>
+
+    <div class="beeright"><img src="./assets/Images/bee right.png" alt=""></div>
 
     <script>
       const object = document.querySelector(".object");
-      const content = document.querySelector(".content");
 
       content.addEventListener("scroll", () => {
         const scrollPercentage = (content.scrollTop / (content.scrollHeight - content.clientHeight)) * 100;
@@ -1357,7 +1477,7 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
 
 
@@ -1388,14 +1508,14 @@
     <script src="./assets/Slider/jquery.jcslider.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function () {
-        $('.jc-slider').jcSlider({
-          animationIn: "lightSpeedIn",
-          animationOut: "lightSpeedOut",
-          stopOnHover: false, // true by default
-          loop: true // true by default
-        });
-      });
+      // $(document).ready(function () {
+      //   $('.jc-slider').jcSlider({
+      //     animationIn: "lightSpeedIn",
+      //     animationOut: "lightSpeedOut",
+      //     stopOnHover: false, // true by default
+      //     loop: true // true by default
+      //   });
+      // });
     </script>
 
 
@@ -1454,20 +1574,20 @@
       //   $(this).slick('slickPrev');
       // };
     }).on('mousedown touchstart', function () {
-      // dragging = true;
-      // tracking = $('.slick-track', $slider).css('transform');
-      // tracking = parseInt(tracking.split(',')[5]);
-      // rightTracking = $('.slideshow-right .slick-track').css('transform');
-      // rightTracking = parseInt(rightTracking.split(',')[5]);
+      dragging = true;
+      tracking = $('.slick-track', $slider).css('transform');
+      tracking = parseInt(tracking.split(',')[5]);
+      rightTracking = $('.slideshow-right .slick-track').css('transform');
+      rightTracking = parseInt(rightTracking.split(',')[5]);
     }).on('mousemove touchmove', function () {
-      // if (dragging) {
-      //   newTracking = $('.slideshow-left .slick-track').css('transform');
-      //   newTracking = parseInt(newTracking.split(',')[5]);
-      //   diffTracking = newTracking - tracking;
-      //   $('.slideshow-right .slick-track').css({ 'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')' });
-      // }
+      if (dragging) {
+        newTracking = $('.slideshow-left .slick-track').css('transform');
+        newTracking = parseInt(newTracking.split(',')[5]);
+        diffTracking = newTracking - tracking;
+        $('.slideshow-right .slick-track').css({ 'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')' });
+      }
     }).on('mouseleave touchend mouseup', function () {
-      // dragging = false;
+      dragging = false;
     });
 
     $('.slideshow-right .slider').slick({
@@ -1495,48 +1615,20 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info text-center">
-          <a href="index.html" class="logo d-inline-block">
-            <img height="120px" width="120px" src="assets/img/Logos/SIJO final logo yellow bg.png" alt="">
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>About</h4>
-          <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">News & Blogs</a></li>
-            <li><a href="#">Help & Supports </a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">How we work</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            Sijo Honey, Andoor, <br>
-            Kulasekharam, 629 161,<br>
-            Tamil Nadu, India. <br><br>
-            <strong>Phone:</strong> +91 9489868480<br>
-            <strong>Email:</strong> contact@sijohoney.com<br>
-          </p>
+    <div class="container " data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-4 left_vector">
+          <img height="600px" width="350px" src="./assets/Images/left side png vector footer.png" alt="">
 
         </div>
+        <div class="col-lg-4">
 
+
+        </div>
+        <div class="col-lg-4">
+
+
+        </div>
       </div>
     </div>
 
@@ -1545,10 +1637,6 @@
         &copy; Copyright <strong><span>Sijo Honey</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
         Designed with 🖤 by <a href="https://sijohoney.com/">Sijo Honey</a>
       </div>
     </div>
